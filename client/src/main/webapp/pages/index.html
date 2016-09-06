@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code Wars</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/starwars.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lightsaber.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="css/glitch.css" rel="stylesheet" type="text/css"/>-->
+    </head>
+    <body >
+            <div class="heading"  data-text="SourceWars">SourceWars</div> 
+        <div id="bg">
+            <div id="lightsaber" data-bind="click: start, css:{ blue: obi, red: vader}">
+                <span id="light" data-bind="css: {on: vader, off: obi}"></span>
+                <span id="generator">
+                    <span id="guard">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span id="handlestart">
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span id="handle">
+                        <span></span>
+                        <span></span>
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <span></span><span></span>
+                        <span class="long"></span>
+                        <span class="long"></span>
+                        <span class="box"></span>
+                    </span>
+                    <span class="wings">
+                        <span class="wing wing1"></span>
+                        <span class="wing wing2"></span>
+                        <span class="wing wing3"></span>
+                    </span>
+
+                    <span class="light"></span>
+                </span>
+            </div>
+
+
+            <canvas id="stitch" width="600" height="600" ></canvas>
+        </div>
+        <!-- ${browser.bootstrap} -->
+
+    </body>
+</html>
