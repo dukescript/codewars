@@ -37,9 +37,8 @@ final class DataModel {
         LOADER = new Loader();
         Models.toRaw(LOADER);
         CanvasExtras.registerAudioBinding();
-        CanvasExtras.shadowColor("#ff0000", 3);
         LOADER.applyBindings();
-        g.setFillStyle(new Style.Color("#ff0000"));
+
     }
 
     @Function
@@ -64,7 +63,11 @@ final class DataModel {
      * @param args the command line arguments
      */
     public static void read(GraphicsContext2D g2d, String fileName) throws IOException {
-        g2d.clearRect(0, 0, 2000, 2000);
+        g2d.setTransform(1, 0, 0, 1, 0, 0);
+
+        g2d.clearRect(0, 0, 1000, 1000);
+        CanvasExtras.shadowColor("#ff0000", 3);
+        g.setFillStyle(new Style.Color("#ff0000"));
         final BrwsrCtx ctx = BrwsrCtx.findDefault(DataModel.class);
         File file = new File(fileName);
         FileInputStream fs = new FileInputStream(file);
@@ -96,7 +99,7 @@ final class DataModel {
                     if (stitchAnimation.isFinished()) {
                         LOADER.setVader(false);
                         LOADER.setObi(false);
-                        
+
                         System.out.println("finished");
                         return;
                     }
