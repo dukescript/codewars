@@ -14,6 +14,7 @@ and open the template in the editor.
 }
 
 body {
+     -webkit-user-select: none;
     background:  black;
     color: #fff;
     font-family: 'jedi', Fallback, sans-serif;
