@@ -240,7 +240,7 @@
     <dependency>
       <groupId>com.dukescript.canvas</groupId>
       <artifactId>canvas-api</artifactId>
-      <version>0.9-SNAPSHOT</version>
+      <version>0.8</version>
       <type>jar</type>
     </dependency>
   </dependencies>
