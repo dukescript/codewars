@@ -9,7 +9,7 @@
     </head>
     <body >
             <div class="heading"  data-text="SourceWars">SourceWars</div> 
-            <div id="bg" data-bind="css:{ red: vader, blue: obi}">
+            <div id="bg" data-bind="css:{ red: vader, blue: obi, finished: !vader()&&!obi()}">
             <div id="lightsaber" data-bind="click: start, css:{ blue: obi, red: vader}">
                 <span id="light" data-bind="css: {on: vader, off: obi}"></span>
                 <span id="generator">

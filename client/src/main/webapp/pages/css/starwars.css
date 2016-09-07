@@ -31,18 +31,22 @@ body {
 }
 
 #bg{
-    /*background-image:  -webkit-radial-gradient(15% 50%, circle cover, transparent 0%, #000 100%),url("Fotolia_97840476_M.jpg");*/
+    background-image:  -webkit-radial-gradient(50% 50%, circle cover, transparent 0%, #000 100%),url("Fotolia_97840476_M.jpg");
     background-size: 100%;
     width: 100vw;
     height: 55.26vw;
 }
 
 #bg.blue{
-    background-image:  -webkit-radial-gradient(15% 50%, circle cover, rgba(0,0,255,0.2) 0%, #000 100%),url("Fotolia_97840476_M.jpg");
+    background-image:  -webkit-radial-gradient(15% 30%, circle cover, rgba(0,0,255,0.2) 0%, #000 100%),url("Fotolia_97840476_M.jpg");
 }
 
 #bg.red{
     background-image:  -webkit-radial-gradient(15% 30%, circle cover, rgba(255,0,0,0.2) 0%, #000 100%),url("Fotolia_97840476_M.jpg");
+}
+
+#bg.finished{
+    background-image:  url("Fotolia_97840476_M.jpg");
 }
 
 h1{
