@@ -11,8 +11,6 @@
   <name>starwars</name>
     <modules>
         <module>client</module>
-        <module>client-web</module>
-        <module>client-ios</module>
         <module>js</module>
     </modules>
     <properties>
