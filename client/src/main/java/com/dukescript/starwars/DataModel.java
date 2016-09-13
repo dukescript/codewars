@@ -6,6 +6,7 @@ import com.dukescript.starwars.js.CanvasExtras;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
@@ -69,8 +70,7 @@ final class DataModel {
         CanvasExtras.shadowColor("#ff0000", 3);
         g.setFillStyle(new Style.Color("#ff0000"));
         final BrwsrCtx ctx = BrwsrCtx.findDefault(DataModel.class);
-        File file = new File(fileName);
-        FileInputStream fs = new FileInputStream(file);
+        InputStream fs = DataModel.class.getResourceAsStream(fileName);
         DSTModel design = DSTModel.readDesign(fs);
         LOADER.setVader(true);
 
